@@ -1,0 +1,28 @@
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.letter {
+    display: block;
+    margin-left: 0.5em;
+    background: lightgray;
+    padding: 0.6rem;
+}
+
+.space {
+    background: none;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: initial;
+}
+
+.chosen {
+    background: lawngreen;
+    color: white;
+}

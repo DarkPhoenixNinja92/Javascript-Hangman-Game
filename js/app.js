@@ -19,6 +19,10 @@ function printArr() {
     for (let i = 0; i < strSplit.length; i++) {
         let newLi = document.createElement("li");
         let newLiContent = document.createTextNode(strSplit[i]);
+        if (strSplit[i] === ' ') {
+            newLi.classList.add("space");
+        }
+        newLi.classList.add("letter");
         newLi.appendChild(newLiContent);
         phraseSection.appendChild(newLi);
     }
