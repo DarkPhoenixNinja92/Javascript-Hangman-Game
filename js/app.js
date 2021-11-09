@@ -9,10 +9,18 @@ function getRandomPhrase() {
 }
 
 function splitPhrase() {
-    let charArray = getRandomPhrase().split('');
-    return charArray;
-}
+    const phraseChar = getRandomPhrase().split('');
+    return phraseChar;
 
-function addPhrase() {
-    splitPhrase();
 }
+const strSplit = splitPhrase();
+
+function printArr() {
+    for (let i = 0; i < strSplit.length; i++) {
+        let newLi = document.createElement("li");
+        let newLiContent = document.createTextNode(strSplit[i]);
+        newLi.appendChild(newLiContent);
+        phraseSection.appendChild(newLi);
+    }
+}
+printArr();
