@@ -1,4 +1,4 @@
-const keyboard = document.getElementById("qwerty");
+const keyboard = document.querySelector("#qwerty > .keyrow > .key");
 let phraseSection = document.querySelector("#phrase > ul");
 let phrases = ["When the Rubber Hits the Road", "You Can't Teach an Old Dog New Tricks", "Drawing a Blank", "Jumping the Gun", "Birds of a Feather Flock Together", "Not the Sharpest Tool in the Shed", "Jack of All Trades Master of None", "Give a Man a Fish", "Mountain Out of a Molehill", "Wouldn't Harm a Fly"];
 
@@ -28,3 +28,17 @@ function printArr() {
     }
 }
 printArr();
+
+function checkLetter(btn) {
+    let match;
+    let phraseList = document.querySelectorAll("li");
+    for (let i = 0; i < phraseList.length; i++) {
+
+    }
+}
+checkLetter();
+
+keyboard.addEventListener('click', function(e) {
+    let userChoose = e.target.innerHTML;
+    if (userChoose) {}
+});
